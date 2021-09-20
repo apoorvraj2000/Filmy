@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangle"
+    android:layout_margin="10dp"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/poster"
+        android:layout_width="150dp"
+        android:layout_height="230dp"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="4dp"
+        android:padding="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/poster"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16000003" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:hint="Title"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/rating"
+        app:layout_constraintLeft_toRightOf="@id/poster"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Rating:"
+        android:textColor="#dd8787"
+
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/popularity"
+        app:layout_constraintLeft_toRightOf="@id/poster"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/popularity"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Popularity:"
+        android:textColor="#dd8787"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/releaseDate"
+        app:layout_constraintLeft_toRightOf="@id/poster"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rating" />
+
+    <TextView
+        android:id="@+id/overview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:layout_marginBottom="4dp"
+        android:padding="4dp"
+        android:hint="Overview:"
+        android:textColor="#dd8787"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/poster" />
+
+    <TextView
+        android:id="@+id/releaseDate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="2021"
+        android:textColor="#dd8787"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/overview"
+        app:layout_constraintLeft_toRightOf="@id/poster"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/popularity" />
+
+    <Button
+        android:id="@+id/watchNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Now Streaming On"
+        android:textAllCaps="false"
+        android:textColor="#dd8787"
+        android:textSize="24sp"
+        app:backgroundTint="#500E61"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/rectangle"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/overview" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

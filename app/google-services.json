@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "700037047171",
+    "project_id": "filmy-b60e3",
+    "storage_bucket": "filmy-b60e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700037047171:android:417846810c712895ca0cb6",
+        "android_client_info": {
+          "package_name": "com.example.filmy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700037047171-2m7q8bmj9kbr1s11ktib2okfaitdg5gj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAz2DbwcIpVoPNO3_Q020SkzLBQ6L6JqM0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "700037047171-2m7q8bmj9kbr1s11ktib2okfaitdg5gj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
